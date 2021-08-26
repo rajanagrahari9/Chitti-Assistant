@@ -63,8 +63,8 @@ def sendEmail(to, content):
     server.starttls()
     with open("email.txt") as f:
         passw = f.read()
-        server.login("rajan972001@gmail.com", f"{passw}")
-    server.sendmail("rajan972001@gmail.com", to, content)
+        server.login("example@gmail.com", f"{passw}")
+    server.sendmail("example@gmail.com", to, content)
     server.close()
 
 
